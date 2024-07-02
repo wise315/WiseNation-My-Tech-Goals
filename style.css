@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+section.profile {
+    text-align: center;
+}
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.profile-picture-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+section.goals, section.links {
+    background-color: #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section.links ul li {
+    background: none;
+    text-align: center;
+}
+
+section.links ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.links ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section ul li {
+        padding: 5px;
+    }
+}
